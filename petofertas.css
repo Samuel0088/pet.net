@@ -348,13 +348,13 @@ span {
   height: 350px;
 }
 
-.gallery {
+.racoes {
   display: flex;
   flex-flow: row nowrap;
   gap: 80px;
   width: 100%;
   padding: 10px; /* Aumenta o padding para afastar os itens da borda */
-  height: 280px;
+  height: 260px;
   border-radius: 20px;
   border: 1px solid #CFCFCF;
 }
