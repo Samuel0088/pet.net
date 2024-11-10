@@ -559,7 +559,7 @@ hr {
 }
 
 .aspas_azul {
-    margin-top: 260px;
+    margin-top: 270px;
     margin-left: -60px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -569,7 +569,7 @@ hr {
 
 .texto_feedback {
     margin-left: -100px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 300px;
     margin-right: -50px;
 }
@@ -583,7 +583,7 @@ hr {
 
 .fundo {
     background: #eceaea;
-    height: 300px;
+    height: 310px;
 }
 
 .nome {
