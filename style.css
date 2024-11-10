@@ -587,7 +587,7 @@ hr {
 }
 
 .nome {
-    margin-top: 40px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -603,10 +603,9 @@ hr {
 
 .estrela {
     display: flex;
-    justify-content: space-between;
-    margin-top: 210px;
-    padding-right: 100px;
-    margin-left: -325px;
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-bottom: 20px;
 }
 
 #botao_voltar_para_cima {
