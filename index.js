@@ -1,31 +1,33 @@
 // modo claro e modo escuro
-let trilho = document.getElementById('trilho');
-let body = document.querySelector('body');
-let texto = document.getElementsByClassName('texto');
-let carousel_slide = document.getElementsByClassName('carousel__slide');
-let marquee = document.getElementsByClassName('marquee');
-let borda_branca_agendar = document.getElementById('borda_branca_agendar');
-let svg = document.querySelector('svg');
+document.addEventListener('DOMContentLoaded', () => {
+  let trilho = document.getElementById('trilho');
+  let body = document.querySelector('body');
+  let texto = document.getElementsByClassName('texto');
+  let carousel_slide = document.getElementsByClassName('carousel__slide');
+  let marquee = document.getElementsByClassName('marquee');
+  let borda_branca_agendar = document.getElementById('borda_branca_agendar');
+  let svg = document.querySelector('svg');
 
-trilho.addEventListener('click', () => {
-  trilho.classList.toggle('dark');
-  body.classList.toggle('dark');
-  borda_branca_agendar.classList.toggle('dark');
-  svg.classList.toggle('dark')
+  trilho.addEventListener('click', () => {
+    trilho.classList.toggle('dark');
+    body.classList.toggle('dark-mode');
+    borda_branca_agendar.classList.toggle('dark');
+    svg.classList.toggle('dark')
 
-  // Iterar pela coleção de elementos com a classe 'texto'
-  for (let i = 0; i < texto.length; i++) {
-    texto[i].classList.toggle('dark');
-  }
-  
-  // Iterar pela coleção de elementos com a classe 'carousel__slide'
-  for (let i = 0; i < carousel_slide.length; i++) {
-    carousel_slide[i].classList.toggle('dark');
-  }
+    // Iterar pela coleção de elementos com a classe 'texto'
+    for (let i = 0; i < texto.length; i++) {
+      texto[i].classList.toggle('dark');
+    }
+    
+    // Iterar pela coleção de elementos com a classe 'carousel__slide'
+    for (let i = 0; i < carousel_slide.length; i++) {
+      carousel_slide[i].classList.toggle('dark');
+    }
 
-  for (let i = 0; i < marquee.length; i++) {
-    marquee[i].classList.toggle('dark');
-  }
+    for (let i = 0; i < marquee.length; i++) {
+      marquee[i].classList.toggle('dark');
+    }
+  });
 });
 
 // animação do carrosel embaixo do header

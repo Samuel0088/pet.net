@@ -287,12 +287,22 @@ body {
     transition: .5s;
 }
 
-body.dark {
+body.dark-mode {
     background-color: #3e4451;
     color: white;
 }
 
-.texto.dark {
+.texto {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    font-size: 22px;
+}
+
+.dark-mode .texto {
     color: white;
 }
 

@@ -214,6 +214,10 @@ span {
     font-size: 22px;
 }
 
+.texto.dark {
+    color: white;
+}
+
 #foto_gradiente {
     text-align: center;
 }
@@ -308,7 +312,7 @@ hr {
     width: 100%;
     }
 
-    .marquee.dark {
+    body.dark-mode .marquee {
         background-color: #3e4451;
     }
 
@@ -580,9 +584,17 @@ hr {
     padding-bottom: 20px;
 }
 
+body.dark-mode #fundo_feedback {
+    background: #353a44;
+}
+
 .fundo {
     background: #eceaea;
     height: 320px;
+}
+
+body.dark-mode .fundo {
+    background: #3e4451;
 }
 
 .nome {
