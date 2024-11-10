@@ -381,6 +381,7 @@ span {
       font-size: 20px;
       font-weight: bold;
       display: block;
+      margin-top: -10px;
   }
 
   .ajustar {
