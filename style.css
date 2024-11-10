@@ -389,7 +389,7 @@ hr {
     gap: 80px;
     width: 100%;
     padding: 10px; /* Aumenta o padding para afastar os itens da borda */
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
     border: 1px solid #CFCFCF;
   }
@@ -435,7 +435,7 @@ hr {
 
     .container a {
         margin-left: -170px;
-        margin-top: 20px;
+        margin-top: 40px;
         background-color: #295377;
         width: 280px;
         padding: 10px;
@@ -841,30 +841,15 @@ footer {
     }
 
     .texto_feedback p {
-        width: 200px;
+        width: 230px;
+    }
+
+    .aspas_azul {
+        margin-top: 260px;
     }
 
     .nome {
-        margin-top: 20px;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    .data {
-        font-size: 17px;
-    }
-
-    .estrela img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .estrela {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 210px;
-        padding-right: 20px;
-        margin-left: -215px;
+        margin-top: 0px;
     }
     
     footer {
