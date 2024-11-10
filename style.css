@@ -587,7 +587,7 @@ hr {
 }
 
 .nome {
-    margin-top: 50px;
+    margin-top: 40px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -604,7 +604,7 @@ hr {
 .estrela {
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 210px;
     padding-right: 100px;
     margin-left: -325px;
 }
