@@ -54,10 +54,9 @@ body.dark .mudar_cor_modo_dark {
 #categorias {
     font-weight: bold;
     cursor: pointer;
-    width: 155px;
-
+    width: 250px;
     padding: 5px;
-  }
+}
   
 .mudar_cor_modo_dark p {
   padding: -5px;
@@ -346,7 +345,7 @@ span {
   gap: 30px;
   width: 100%;
   padding: 10px; /* Aumenta o padding para afastar os itens da borda */
-  height: 300px;
+  height: 350px;
 }
 
 .gallery {
@@ -355,7 +354,7 @@ span {
   gap: 80px;
   width: 100%;
   padding: 10px; /* Aumenta o padding para afastar os itens da borda */
-  height: 280px;
+  height: 300px;
   border-radius: 20px;
   border: 1px solid #CFCFCF;
 }
