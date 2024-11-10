@@ -2,8 +2,9 @@ nav {
     z-index: 1;
 }
 
-.dark #img_destaque {
-    content: url('imagens/img_destaque_servicos_dark.png'); /* Troca a imagem no modo escuro */
+body.dark {
+    background-color: #3e4451;
+    color: white;
 }
 
 .dark .faq_container {

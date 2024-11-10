@@ -21,6 +21,14 @@ select, input {
     box-sizing: border-box;
 }
 
+body.dark-mode #entrar_em_contato {
+    background: #7f889c;
+}
+
+body.dark-mode #Formulario_forms {
+    color: white;
+}
+
 select[size] {
     height: auto;
     overflow-y: auto;

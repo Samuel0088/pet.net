@@ -94,6 +94,7 @@ controls.forEach((control) => {
 });
 
 // aba de carrinho de compras
+let body = document.querySelector('body');
 let iconCart = document.querySelector('.icon-cart');
 let closeCart = document.querySelector('.close')
 let listProductHTML = document.querySelector('.listCart');

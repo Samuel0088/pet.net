@@ -1,3 +1,7 @@
+body.dark {
+    background: #3e4451;
+}
+
 #iconcasa {
     margin-top: 20px;
     margin-left: 20px;
@@ -12,13 +16,17 @@
 
 #iconcasa svg {
     width: 30px;
-    fill: black; /* Define a cor padrão */
+    fill: black; 
     cursor: pointer;
-    transition: fill 0.3s; /* Adiciona uma transição suave */
+    transition: fill 0.3s;
 }
 
 body.dark #iconcasa svg {
-    fill: white; /* Cor para o modo escuro */
+    fill: white; 
+}
+
+body.dark #iconcasa p {
+    color: white;
 }
 
 #iconcasa p {
@@ -36,6 +44,11 @@ body.dark #iconcasa svg {
   padding: 10px;
   border-radius: 10px;
   margin-left: 20px;
+}
+
+body.dark .mudar_cor_modo_dark {
+    background: #7f889c;
+    color: white;
 }
 
 #categorias {
@@ -77,6 +90,22 @@ body.dark #iconcasa svg {
     padding-top: 10px;
     margin-top: -45px;
     transition: transform .5s;
+}
+
+body.dark #Racao {
+    color: white;
+}
+
+body.dark #Acessorios {
+    color: white;
+}
+
+body.dark #Remedios {
+    color: white;
+}
+
+body.dark .container {
+    color: white;
 }
 
 /* Define a cor vermelha apenas quando houver itens no carrinho */
