@@ -380,7 +380,7 @@ hr {
     gap: 30px;
     width: 100%;
     padding: 20px; /* Aumenta o padding para afastar os itens da borda */
-    height: 340px;
+    height: 360px;
   }
   
   .gallery {
@@ -559,7 +559,7 @@ hr {
 }
 
 .aspas_azul {
-    margin-top: 270px;
+    margin-top: 280px;
     margin-left: -60px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -583,7 +583,7 @@ hr {
 
 .fundo {
     background: #eceaea;
-    height: 310px;
+    height: 320px;
 }
 
 .nome {
