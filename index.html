@@ -38,32 +38,42 @@
             <img id="img_logo" src="imagens/logo.png" alt="">
         </a>
 
-        <!-- Hamburger icon -->
+        <!-- menu hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu"/>
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-       <!-- Menu -->
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-            
+        <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Menu com subitens usando `details` -->
+            <li>
                 <details>
                     <summary>Sobre Nós</summary>
-
-                    <p><li><a href="servicos.html">Serviços</a></li></p>
-                    <p><li><a href="contato.html">Contato</a></li></p>
+                    <ul>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
                 </details>
+            </li>
 
-                <li><a href="pet_ofertas.html">Pet Ofertas</a></li>
-                <li id="ajustar_curiosidades"><a href="curiosidades.html">Curiosidades</a></li>
-            </ul>
+            <li><a href="pet_ofertas.html">Pet Ofertas</a></li>
+            <li id="ajustar_curiosidades"><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
 
-            <!-- Trilho div inside the menu -->
-            <p>Modo claro e escuro</p>
-            <div class="trilho" id="trilho">
-                <div class="indicador"></div>
-            </div>
-        </nav>
+         <!-- Trilho para alternância de tema claro e escuro -->
+        <p>Modo claro e escuro</p>
+        <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+        </div>
+    </nav>
+    
+        <!-- Trilho para alternância de tema claro e escuro no pc -->
+        <p id="modo_alternancia">Modo claro e escuro</p>
+        <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+        </div>
   
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
@@ -111,10 +121,15 @@
         </section>
 
         <br><br><br>
-            <div class="titulo">Tudo o que seu pet precisa em um só lugar</div>
-            <div class="texto">
+            <div class="titulo" id="titulo_destaque">Tudo o que seu pet precisa em um só lugar</div>
+            <div class="texto" id="texto_destaque">
                 Um dos hospitais veterinários mais avançados do Brasil, com infraestrutura completa e equipe de profissionais altamente qualificados.
             </div>
+
+            <div id="img_destaque">
+                <img src="imagens/img_destaque.png" alt="">
+            </div>
+            
             <div id="foto_gradiente">
                 <div id="ajustar_foto_banho">
                     <img class="img_gradiente" src="imagens/foto_banho.png" alt="Foto_banho cachorro">

@@ -115,6 +115,7 @@ body.showCart .container_carrinho {
     cursor: pointer;
     margin-top: 505px;
     height: 50px;
+    z-index: 1000;
 }
 
 .cartTab .btn .close {
@@ -736,6 +737,10 @@ button:hover {
     margin: 10px; /* Espaçamento entre as imagens */
 }
 
+#img_destaque img {
+    display: none;
+}
+
 footer {
     background-color: #295377;
     height: 350px;
@@ -867,5 +872,54 @@ footer {
         font-size: 15px;
         margin-left: -30px;
         height: 300px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+
+    #titulo_destaque {
+        font-size: 50px;
+        width: 450px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+
+    #texto_destaque {
+        width: 450px;
+        font-size: 25px;
+    }
+
+    #foto_gradiente {
+        display: none;
+    }
+
+    #img_destaque img {
+        display: block;
+        float: right;
+        margin-top: -370px;
+        width: 800px;
+    }
+
+    #subir_diferencial {
+        margin-top: 150px;
+        display: flex;
+    }
+
+    /* mais vendidos */
+    .container {
+        max-width: 1300px;
+    }
+      
+    .marquee {
+        background: #fdf9f9;
+    }
+
+    #fundo_feedback {
+        padding-bottom: 50px;
+        margin-top: -50px;
+    }
+
+    .cartTab .btn button {
+        margin-top: 470px;
     }
 }

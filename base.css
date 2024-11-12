@@ -50,7 +50,7 @@ details {
 }
 
 #ajustar_curiosidades {
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 a{
@@ -328,6 +328,18 @@ body.dark-mode {
     background-color: #484d57;
 }
 
+header #modo_alternancia {
+    display: none;
+}
+
+header .trilho {
+    display: none;
+}
+
+nav .trilho {
+    display: block;
+}
+
 @media (max-width: 450px) {
 
     .img-desktop {
@@ -344,7 +356,7 @@ body.dark-mode {
 }
 
 
-@media(min-width: 1000px) and (max-width: 1400px)  {
+@media(min-width: 900px) and (max-width: 1400px)  {
 
     .nav{
         max-height: none;
@@ -353,10 +365,13 @@ body.dark-mode {
         float: right;
         width: fit-content;
         background-color: transparent;
+        margin-right: 150px;
     }
+
     .menu li{
-        float: left;
+        display: inline-block;
     }
+
     .menu a:hover{
         background-color: transparent;
         color: var(--gray);
@@ -365,4 +380,57 @@ body.dark-mode {
     .hamb{
         display: none;
     }
+
+    #ajustar_curiosidades {
+        margin-top: 0;
+    }
+
+    details {
+        display: inline-block;
+        position: relative;
+    }
+
+    details[open] summary ~ ul {
+        position: absolute;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    details {
+        padding: 0px;
+        padding-left: 10px;
+        color: white;
+    }
+    
+    .nav-manual, .nav-auto {
+        position: absolute;
+        width: 100%;
+        margin-top: 34%;
+        display: flex;
+        justify-content: center;
+        margin-left: -100px;
+    }
+
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+        background: #fdf9f9;
+    }
+
+    body {
+        background: #f5f1f1;
+    }
+
+    .titulo {
+        font-weight: bold;
+    }
+    
+    header .trilho {
+        display: block;
+        float: right;
+        margin-right: -700px;
+        margin-top: 20px;
+    }
+
+
+    
 }

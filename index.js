@@ -5,13 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let texto = document.getElementsByClassName('texto');
   let carousel_slide = document.getElementsByClassName('carousel__slide');
   let marquee = document.getElementsByClassName('marquee');
-  let borda_branca_agendar = document.getElementById('borda_branca_agendar');
   let svg = document.querySelector('svg');
 
   trilho.addEventListener('click', () => {
     trilho.classList.toggle('dark');
     body.classList.toggle('dark-mode');
-    borda_branca_agendar.classList.toggle('dark');
     svg.classList.toggle('dark')
 
     // Iterar pela coleção de elementos com a classe 'texto'

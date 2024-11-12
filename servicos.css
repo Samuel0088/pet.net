@@ -187,3 +187,8 @@ hr {
         height: 300px;
     }
 }
+
+@media (min-width: 900px) and (max-width: 1400px) {
+
+   
+}

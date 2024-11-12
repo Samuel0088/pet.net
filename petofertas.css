@@ -615,3 +615,30 @@ h3 {
         height: 300px;
     }
 }
+
+@media (min-width: 900px) and (max-width: 1400px) {
+
+    main {
+        padding-top: 30px;
+    }
+
+    .cartTab .btn button {
+        margin-top: 470px;
+    }
+
+    /* mais vendidos */
+    .container {
+        max-width: 1300px;
+    }
+
+    .item {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        margin-left: -10px;
+    }
+
+    .container a {
+        margin-top: 60px;
+    }
+}
