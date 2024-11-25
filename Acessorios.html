@@ -1,0 +1,469 @@
+<!-- 
+    Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de Americana 
+    e tem como a finalidade de estudar e aprofundar os conhecimentos  em HTML, CSS e JS.
+
+    Autores:
+    Turma:
+    Data: 
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Sobre o WebSite -->
+
+    <title>Pet Ofertas</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="author"
+        content="Samuel Vieira Leonardo Carrilho Pietro Gimenez Octávio Augusto Pedro Zago Pedro Rodrigues">
+    <meta name="description" content="Projeto feito em parceria com a IBM">
+    <meta name="keywords" content="Pet.Net">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="petofertas.css">
+    <link rel="stylesheet" href="Acessorios.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header class="header">
+
+        <!-- Logo -->
+        <a href="index.html">
+            <img id="img_logo" src="imagens/logo.png" alt="">
+        </a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="index.html" data-hover-image="imagens/icon-casa.png">Home</a>
+                    <div class="hover-image"><img src="imagens/icon-casa.png" alt="Hover Image"></div>
+                </li>
+                <li>
+                    <a href="servicos.html" data-hover-image="imagens/icon-servicos.png">Serviços</a>
+                    <div class="hover-image ajustar_icon"><img src="imagens/icon-servicos.png" alt="Hover Image"></div>
+                </li>
+                <li>
+                    <a href="contato.html" data-hover-image="imagens/contato.png">Contato</a>
+                    <div class="hover-image ajustar_icon"><img src="imagens/icon-contato.png" alt="Hover Image"></div>
+                </li>
+                <li>
+                    <a href="pet_ofertas.html" data-hover-image="imagens/pet_ofertas.png">Pet Ofertas</a>
+                    <div class="hover-image ajustar_icon_ofertas"><img src="imagens/icon-ofertas.png" alt="Hover Image">
+                    </div>
+                </li>
+                <li>
+                    <a href="curiosidades.html" data-hover-image="imagens/icon-casa.png">Curiosidades</a>
+                    <div class="hover-image ajustar_icon_ofertas"><img src="imagens/icon-curiosidades.png"
+                            alt="Hover Image"></div>
+                </li>
+            </ul>
+
+            <!-- Trilho div inside the menu -->
+            <p id="modo_alternancia">Modo claro e escuro</p>
+            <div class="trilho" id="trilho">
+                <div class="indicador"></div>
+            </div>
+        </nav>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <script src="script.js"></script>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <div class="slider-content">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="imagens/Montagem_Acessorios_cell.png" alt="">
+                <img class="img-mobile" src="imagens/Montagem_Acessorios_cell.png" alt="">
+            </div>
+
+        </div>
+
+        <div id="iconcasa">
+            <a href="index.html">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+            <p>> Ofertas do mês</p>
+        </div>
+
+        <details class="mudar_cor_modo_dark">
+            <summary>Categorias</summary>
+            <br>
+            <p><a id="link-voltar" href="pet_ofertas.html">Voltar</a></p>
+            <p><a id="link-remedios" href="Racoes.html">Rações</a></p>
+            <p><a id="link-acessorios" href="Remedios.html">Remédios</a></p>
+
+        </details>
+
+        <!-- HTML do Carrinho -->
+        <div class="container_carrinho">
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                </svg>
+                <span>0</span> <!-- Quantidade de itens no carrinho -->
+            </div>
+        </div>
+
+        <div class="cartTab">
+            <h3>Carrinho de Compras</h3>
+            <div class="listCart"></div> <!-- Carrinho estará vazio inicialmente -->
+            <br>
+            <div class="btn">
+                <button class="close">Fechar</button>
+                <button class="checkout">Comprar</button>
+            </div>
+        </div>
+
+
+        <br><br>
+        <!-- HTML do Produto -->
+        <h3 id="Racao">Caminhas</h3>
+        <div class="container">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="imagens/caminha_azul.png" alt="" class="current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Caminha Azul
+                        <p class="texto_mais_vendidos">Cama Para Cachorro Impermeável Porte Médio
+                        </p>
+                        </p>
+                        <p class="preco">R$ 75,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Caminha_2.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Caminha Roxa
+                        <p class="texto_mais_vendidos">Confortável para o seu cão</p>
+                        </p>
+                        <p class="preco">R$ 67,99</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Caminha_3.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Caminha Azul <br>Marinho
+                        <p class="texto_mais_vendidos">Quentinha e confortável</p>
+                        </p>
+                        <p class="preco">R$ 70,00</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Gato_1.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Caminha Cinza/Rosa
+                        <p class="texto_mais_vendidos">Confortável para seu gatinho</p>
+                        </p>
+                        <p class="preco">R$ 65,20</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Gato_2.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Caminha <br> Preta/Laranja
+                        <p class="texto_mais_vendidos">Caminha aconchegante para seu gato</p>
+                        </p>
+                        <p class="preco">R$ 69,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Gato_3.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Casinha Cinza
+                        <p class="texto_mais_vendidos">Casinha comfortavel <br> com brinquedo dentro</p>
+                        </p>
+                        <p class="preco">R$ 85,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+        <h3 id="Acessorios">Casinhas e Gaiolas</h3>
+        <div class="container">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="imagens/Casinha_1_cao.png" alt="" class="current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Casinha Preta/Azul
+                        <p class="texto_mais_vendidos">Casinha para cachorros de porte médio
+                        </p>
+                        </p>
+                        <p class="preco">R$ 78,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Casinha_1_gato.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Casinha Cinza
+                        <p class="texto_mais_vendidos"> Casinha confortável para seu gato
+                        </p>
+                        </p>
+                        <p class="preco">R$ 87,99</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Casinha_3_cao.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Casinha Preta/Rosa
+                        <p class="texto_mais_vendidos">Casinha para cães de porte medio</p>
+                        </p>
+                        <p class="preco">R$ 69,99</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Casinha_3_gato.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Gaiola para gatos
+                        <p class="texto_mais_vendidos">Tam.: 55cm (Largura) X 30cm (Altura)</p>
+                        </p>
+                        <p class="preco">R$ ,99</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Casinha_2_cao.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Casinha Preta/Azul Marinho
+                        <p class="texto_mais_vendidos">Casinha para cachorros de porte médio</p>
+                        </p>
+                        <p class="preco">R$ 71,50</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Casinha_2_gato.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Casinha Personalizada de <br> Árvore
+                        <p class="texto_mais_vendidos">Casinha em formato de arvore para gatos</p>
+                        </p>
+                        <p class="preco">R$ 89,60</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br><br>
+
+
+        <h3 id="Remedios">Coleiras Personalizadas</h3>
+        <div class="container">
+            <div class="gallery-wrapper_coleiras_personalizadas">
+                <div class="gallery">
+                    <img src="imagens/Coleira_Femea.png" alt="" class="current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Coleira Rosa
+                        <p class="texto_mais_vendidos">Coleira rosa para cadelas de porte médio
+                        </p>
+                        </p>
+                        <p class="preco">R$ 45,80</p>
+
+                        <a class="addCart" id="ajustar_btn_comprar" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Coleira_guia.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Coleira guia para <br> cães de porte médio
+                        <p class="texto_mais_vendidos">
+                        </p>
+                        </p>
+                        <p class="preco">R$ 49,99</p>
+
+                        <a class="addCart" id="ajustar_btn_comprar2" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/coleiras.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Kit 4 coleiras porte <br> pequeno
+                        <p class="texto_mais_vendidos">
+                            Quatro coleiras para cães de porte pequeno
+
+                        </p>
+                        </p>
+                        <p class="preco">R$ 174,99</p>
+
+                        <a class="addCart" id="ajustar_btn_comprar3" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Kit_coleira.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Kit 2 coleiras porte <br> grande
+                        <p class="texto_mais_vendidos">
+                            Kit duas coleiras vermelha e preta</p>
+                        </p>
+                        <p class="preco">R$ 60,50</p>
+
+                        <a class="addCart" id="ajustar_btn_comprar3" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/coleira_laço.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Coleira de Couro
+                        <p class="texto_mais_vendidos">Coleira para <br> cadelas de porte pequeno/médio</p>
+                        </p>
+                        <p class="preco">R$ 54,25</p>
+
+                        <a class="addCart" id="ajustar_btn_comprar3" href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+        <!-- HTML do Produto -->
+
+        <h3 id="Racao">Comedouros</h3>
+        <div class="container">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="imagens/Comedouro1.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Comedouro Azul
+                        <p class="texto_mais_vendidos">Comedouro para cães de porte pequeno/médio</p>
+                        </p>
+                        <p class="preco">R$ 29,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Comedouro2.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Comedouro <br>Adaptável Rosa
+                        <p class="texto_mais_vendidos">Para cães de <br> variádos portes</p>
+                        </p>
+                        <p class="preco">R$ 30,90</p>
+
+                        <a class="addCart" id="ajustar_btn_comprar3" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Comedouro3.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Comedouro Duplo
+                        <p class="texto_mais_vendidos">Comedouro duplo <br> Água/Ração</p>
+                        </p>
+                        <p class="preco">R$ 34,99</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Comedouro4.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Comedouro Rosa
+                        <p class="texto_mais_vendidos">Comedouro antiformigas <br> porte pequeno/médio</p>
+                        </p>
+                        <p class="preco">R$ 25,50</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/Comedouro5.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Comedouro Verde
+                        <p class="texto_mais_vendidos">Comedouro antiformigas <br> porte pequeno/médio<< /p>
+                        </p>
+                        <p class="preco">R$ 25,50</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+        <div id="botao_voltar_para_cima" onclick="scrollToTop()" style="display: none;">
+            <img src="imagens/seta_para_cima.png" alt="">
+        </div>
+
+    </main>
+
+    <!-- Rodape -->
+    <footer>
+
+        <div id="links_uteis">
+            Links úteis
+        </div>
+
+        <div class="links">
+            <a href="">(19) 3648-8720</a>
+            <a href="">Hospital Veterinário</a>
+        </div>
+
+        <div class="links">
+            <a href="">Banho & Tosa</a>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <div class="links">
+            <a href="">Traga seu pet e nos faça uma visita</a>
+        </div>
+
+        <div id="logo_do_footer">
+            <img src="imagens/logo.png" alt="">
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="petofertas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!-- 
+    Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de Americana 
+    e tem como a finalidade de estudar e aprofundar os conhecimentos  em HTML, CSS e JS.
+
+    Autores:
+    Turma:
+    Data: 
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Sobre o WebSite -->
+
+    <title>Pet.Net</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="author"
+        content="Samuel Vieira Leonardo Carrilho Pietro Gimenez Octávio Augusto Pedro Zago Pedro Rodrigues">
+    <meta name="description" content="Projeto feito em parceria com a IBM">
+    <meta name="keywords" content="Pet.Net">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+
+    <!-- Navigation bar -->
+    <header class="header">
+
+        <!-- Logo -->
+        <a href="index.html">
+            <img id="img_logo" src="imagens/logo.png" alt="">
+        </a>
+
+        <!-- menu hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="index.html" data-hover-image="imagens/icon-casa.png">Home</a>
+                    <div class="hover-image"><img src="imagens/icon-casa.png" alt="Hover Image"></div>
+                </li>
+                <li>
+                    <a href="servicos.html" data-hover-image="imagens/icon-servicos.png">Serviços</a>
+                    <div class="hover-image ajustar_icon"><img src="imagens/icon-servicos.png" alt="Hover Image"></div>
+                </li>
+                <li>
+                    <a href="contato.html" data-hover-image="imagens/contato.png">Contato</a>
+                    <div class="hover-image ajustar_icon"><img src="imagens/icon-contato.png" alt="Hover Image"></div>
+                </li>
+                <li>
+                    <a href="pet_ofertas.html" data-hover-image="imagens/pet_ofertas.png">Pet Ofertas</a>
+                    <div class="hover-image ajustar_icon_ofertas"><img src="imagens/icon-ofertas.png" alt="Hover Image">
+                    </div>
+                </li>
+                <li>
+                    <a href="curiosidades.html" data-hover-image="imagens/icon-casa.png">Curiosidades</a>
+                    <div class="hover-image ajustar_icon_ofertas"><img src="imagens/icon-curiosidades.png" alt="Hover Image"></div>
+                </li>
+            </ul>
+
+            <!-- Trilho div inside the menu -->
+            <p id="modo_alternancia">Modo claro e escuro</p>
+            <div class="trilho" id="trilho">
+                <div class="indicador"></div>
+            </div>
+        </nav>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <script src="script.js"></script>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="imagens/Montagem_cell_1.png" alt="">
+                    <img class="img-mobile" src="imagens/Montagem_cell_1.png" alt="">
+                </div>
+
+                <div class="slide-box segundo">
+                    <img class="img-desktop" src="imagens/Montagem_Cell_2.png" alt="">
+                    <img class="img-mobile" src="imagens/Montagem_Cell_2.png" alt="">
+                </div>
+
+                <div class="slide-box terceiro">
+                    <img class="img-desktop" src="imagens/Montagem_cell_3.png" alt="">
+                    <img class="img-mobile" src="imagens/Montagem_cell_3.png" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+        <div class="titulo" id="titulo_destaque">Tudo o que seu pet precisa em um só lugar</div>
+        <div class="texto" id="texto_destaque">
+            Um dos hospitais veterinários mais avançados do Brasil, com infraestrutura completa e equipe de
+            profissionais altamente qualificados.
+        </div>
+
+        <div id="img_destaque">
+            <img src="imagens/img_destaque.png" alt="">
+        </div>
+
+        <div id="foto_gradiente">
+            <div id="ajustar_foto_banho">
+                <img class="img_gradiente" src="imagens/foto_banho.png" alt="Foto_banho cachorro">
+            </div>
+            <div id="ajustar_foto_gradiente">
+                <img class="img_gradiente" src="imagens/foto_gato_exames.png" alt="Foto_Exames">
+            </div>
+            <div id="ajustar_foto_raiox">
+                <img class="img_gradiente" src="imagens/foto_cachorro.png" alt="Foto_Raio">
+            </div>
+        </div>
+        <div id="subir_diferencial">
+            <div class="nosso_diferencial animate">Atendimento 24h por dia</div>
+            <div class="nosso_diferencial animate">Recepção dedicada aos pets</div>
+            <div class="nosso_diferencial animate">Atendimento a animais silvestres</div>
+        </div>
+
+        <p class="titulo diminuir_titulo">Marcas que trabalhos</p>
+        <br>
+        <div class="marquee">
+            <ul class="marquee-content">
+                <img src="imagens/guabi.png" alt="">
+                <img src="imagens/Pet_games.png" alt="">
+                <img src="imagens/Pedigree.png" alt="">
+                <img src="imagens/Purina.png" alt="">
+                <img src="imagens/Whiskas.png" alt="">
+                <img src="imagens/Royal_Canin.png" alt="">
+                <img src="imagens/guabi.png" alt="">
+                <img src="imagens/Pet_games.png" alt="">
+                <img src="imagens/Pedigree.png" alt="">
+                <img src="imagens/Purina.png" alt="">
+                <img src="imagens/Whiskas.png" alt="">
+                <img src="imagens/Royal_Canin.png" alt="">
+            </ul>
+        </div>
+        </div>
+        <br>
+        <p class="titulo diminuir_titulo">Mais Vendidos</p>
+
+        <!-- HTML do Carrinho -->
+        <div class="container_carrinho">
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                </svg>
+                <span>0</span> <!-- Quantidade de itens no carrinho -->
+            </div>
+        </div>
+
+        <div class="cartTab">
+            <h3>Carrinho de Compras</h3>
+            <div class="listCart"></div> <!-- Carrinho estará vazio inicialmente -->
+            <br>
+            <div class="btn">
+                <button class="close">Fechar</button>
+                <button class="checkout">Comprar</button>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- HTML do Produto -->
+        <div class="container">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="imagens/ração_pedigree.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Ração Pedigree
+                        <p class="texto_mais_vendidos">Ração Pedigree para câes adultos 3 kg</p>
+                        </p>
+                        <p class="preco">R$ 69,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/racao_foster.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Ração Foster
+                        <p class="texto_mais_vendidos">Ração Foster para filhotes 2 kg</p>
+                        </p>
+                        <p class="preco">R$ 49,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/racao_magnus.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Ração Magnus
+                        <p class="texto_mais_vendidos">Ração Magnus para filhotes 2 kg</p>
+                        </p>
+                        <p class="preco">R$ 45,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/racao_premier.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Ração Premier
+                        <p class="texto_mais_vendidos">Ração Pedigree para câes adultos 15 kg</p>
+                        </p>
+                        <p class="preco">R$ 249,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="imagens/racao_special_dog.png" alt="" class="item current-item">
+                    <div class="container">
+                        <p class="titulo_mais_vendidos">Ração Special Dog
+                        <p class="texto_mais_vendidos">Ração Special Dog para câes adultos 5kg</p>
+                        </p>
+                        <p class="preco">R$ 99,90</p>
+
+                        <a class="addCart" href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <br><br>
+
+        <!-- HTML do Feedback -->
+        <div id="fundo_feedback">
+            <div class="titulo diminuir_titulo">Quem conhece e confia no nosso trabalho</div>
+            <br>
+            <div class="gallery-wrapper">
+                <div class="gallery fundo">
+                    <div class="aspas">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                    <div class="texto_feedback">
+                        <div class="nome">
+                            Aline Rocha
+                        </div>
+                        <div class="data">
+                            05/04/2024
+                        </div>
+                        <div class="estrela">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                        </div>
+                        <p>Atendimento íncrivel e um ótimo carinho com os pets</p>
+                    </div>
+                    <div class="aspas_azul">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                </div>
+                <div class="gallery fundo">
+                    <div class="aspas">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                    <div class="texto_feedback">
+                        <div class="nome">
+                            Bruna Silva
+                        </div>
+                        <div class="data">
+                            20/10/2024
+                        </div>
+                        <div class="estrela">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                        </div>
+                        <p>Profissionais altamente qualificados sem falar na estrutura da clínica</p>
+                    </div>
+                    <div class="aspas_azul">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                </div>
+                <div class="gallery fundo">
+                    <div class="aspas">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                    <div class="texto_feedback">
+                        <div class="nome">
+                            José Antônio
+                        </div>
+                        <div class="data">
+                            15/02/2024
+                        </div>
+                        <div class="estrela">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                        </div>
+                        <p>A clínica veterinária oferece atendimento de qualidade, com profissionais dedicados e
+                            ambiente acolhedor.</p>
+                    </div>
+                    <div class="aspas_azul">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                </div>
+                <div class="gallery fundo">
+                    <div class="aspas">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                    <div class="texto_feedback">
+                        <div class="nome">
+                            Priscila Alves
+                        </div>
+                        <div class="data">
+                            28/06/2024
+                        </div>
+                        <div class="estrela">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                            <img src="imagens/estrela.png" alt="">
+                        </div>
+                        <p>Bastante estrutura, cuidou muito bem dos meus pets</p>
+                    </div>
+                    <div class="aspas_azul">
+                        <img src="imagens/aspa-preta.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="botao_voltar_para_cima" onclick="scrollToTop()" style="display: none;">
+            <img src="imagens/seta_para_cima.png" alt="">
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div id="links_uteis">
+            Links úteis
+        </div>
+
+        <div class="links">
+            <a href="">(19) 3648-8720</a>
+            <a href="">Hospital Veterinário</a>
+        </div>
+
+        <div class="links">
+            <a href="">Banho & Tosa</a>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <div class="links">
+            <a href="">Traga seu pet e nos faça uma visita</a>
+        </div>
+
+        <div id="logo_do_footer">
+            <img src="imagens/logo.png" alt="">
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
